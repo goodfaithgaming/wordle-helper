@@ -9,7 +9,7 @@ def valid(word, state):
     return True
 
 def main():
-    with open("valid-wordle-words.txt", "r", encoding="utf-8") as file:
+    with open("words/valid-wordle-words.txt", "r", encoding="utf-8") as file:
         lines = [line.rstrip() for line in file]
     
     state = dict(zip("qwertyuiopasdfghjklzxcvbnm", [[None for _ in range(5)] for _ in range(26)]))
